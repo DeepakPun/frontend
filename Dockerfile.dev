@@ -1,0 +1,12 @@
+FROM node:24-alpine3.21
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+# Not strictly necessary when bookmarking volumes. But we can leave it here for learning purposes
+COPY . .   
+
+CMD [ "npm", "run", "dev" ]
