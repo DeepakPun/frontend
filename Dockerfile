@@ -15,6 +15,7 @@ RUN npm run build
 
 # Phase Two: Deploy
 FROM nginx:mainline-alpine
+EXPOSE 80
 # copy static html directory to /usr/share/nginx/html
 COPY --from=builder /app/dist /usr/share/nginx/html
 
