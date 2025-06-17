@@ -7,6 +7,8 @@ COPY package*.json .
 RUN npm install
 
 # Not strictly necessary when bookmarking volumes. But we can leave it here for learning purposes
-COPY . .   
+COPY . .  
+
+EXPOSE 5173
 
 CMD [ "npm", "run", "dev" ]
