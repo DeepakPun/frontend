@@ -4,12 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <button onClick={() => setCount(curCount => curCount - 1)}>-</button>
+      <h1>Next Saturday, hiking garne?</h1>
+      {/* <button onClick={() => setCount(curCount => curCount - 1)}>-</button>
       <span
         style={{
           fontSize: '30px',
@@ -18,7 +18,7 @@ function App() {
       >
         {count}
       </span>
-      <button onClick={() => setCount(curCount => curCount + 1)}>+</button>
+      <button onClick={() => setCount(curCount => curCount + 1)}>+</button> */}
     </>
   )
 }
