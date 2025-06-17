@@ -17,8 +17,10 @@ jobs:
         uses: actions/checkout@v3
       # - run: echo ${{secrets.DOCKER_PASSWORD}} | docker login --username ${{secrets.DOCKER_USERNAME}} --password-stdin
       # - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      - run: echo "Dockerizing ... ..."
       - run: docker build -t pundeepak/front-end-web -f Dockerfile.dev .
       - run: docker run -e CI=true pundeepak/front-end-web npm test -- --coverage
+      - run: echo "Dockerized ... ..."
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
