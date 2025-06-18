@@ -8,6 +8,7 @@ function App() {
       <Alert message='LMK what we should do next Sat?' />
       <Todo />
       <Blog />
+      <h1>Hello how are you?</h1>
     </div>
   )
 }
