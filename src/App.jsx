@@ -5,6 +5,7 @@ import Todo from './components/Todo'
 function App() {
   return (
     <div className='p-4'>
+      <p>Hi</p>
       <Alert message='LMK what we should do next Sat?' />
       <Todo />
       <Blog />
