@@ -7,7 +7,6 @@ const Alert = ({ message = '' }) => {
         role='alert'
       >
         <strong>{message}</strong>
-        <p className="text-lg">FB messenger</p>
         <button
           type='button'
           className='btn-close'
