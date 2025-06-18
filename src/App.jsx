@@ -1,25 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Alert from './components/Alert'
+import Blog from './components/Blog'
+import Todo from './components/Todo'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Next Saturday, hiking garne?</h1>
-      {/* <button onClick={() => setCount(curCount => curCount - 1)}>-</button>
-      <span
-        style={{
-          fontSize: '30px',
-          padding: '25px',
-        }}
-      >
-        {count}
-      </span>
-      <button onClick={() => setCount(curCount => curCount + 1)}>+</button> */}
-    </>
+    <div className='p-4'>
+      <Alert message='LMK what we should do next Sat?' />
+      <Todo />
+      <Blog />
+    </div>
   )
 }
 
